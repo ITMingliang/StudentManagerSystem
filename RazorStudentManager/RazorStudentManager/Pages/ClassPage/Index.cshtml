@@ -1,0 +1,41 @@
+﻿@page
+@model RazorStudentManager.Pages.ClassPage.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+
+    <h1 class="text-info">Index</h1>
+
+    <p>
+        <a class="btn btn-primary w-25" asp-page="Create">创建</a>
+    </p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.StudentClass[0].ClassName)
+                </th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.StudentClass)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ClassName)
+                    </td>
+                    <td>
+                        <a class="btn btn-success btn-sm" asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a class="btn btn-secondary btn-sm" asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a class="btn btn-danger btn-sm" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0efa7913-3bd5-4266-8f75-78ed2f2d92cf": {
+      "ProjectGuid": "0efa7913-3bd5-4266-8f75-78ed2f2d92cf",
+      "DisplayName": "StudentManagerSYS",
+      "ColorIndex": 0
+    },
+    "bebb6a76-b9de-491f-96bf-e56227ffa453": {
+      "ProjectGuid": "bebb6a76-b9de-491f-96bf-e56227ffa453",
+      "DisplayName": "DAL",
+      "ColorIndex": 1
+    },
+    "5a115cce-75fc-4e5c-9ba7-b4f253aa221f": {
+      "ProjectGuid": "5a115cce-75fc-4e5c-9ba7-b4f253aa221f",
+      "DisplayName": "Models",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,105 @@
+﻿@page
+
+@model RazorStudentManager.Pages.StudentPage.IndexModel
+
+
+
+
+<div class="container p-0 m-0">
+    <div class="row mt-5">
+        <h1 class="text-info col-4">学生列表</h1>
+        <div class="col-2 offset-6">
+            <a asp-page="Create" class="btn btn-primary form-control text-white">
+                创建学生
+            </a>
+        </div>
+    </div>
+
+    <form method="get">
+        <div class="row mt-4">
+            <div class="col-4">
+                <select class="custom-select" asp-for="ClassId" asp-items="Model.ClassList">
+                    <option value="">请选择班级</option>
+                </select>
+            </div>
+            <div class="col-4 offset-4">
+
+
+                <div class="input-group">
+                    <input class="form-control" asp-for="Search" placeholder="请输入姓名查询" />
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">查询</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+    <br />
+
+    <form method="post">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>
+
+                        <label scope="col" asp-for="Students.FirstOrDefault().Id"></label>
+                    </th>
+                    <th>
+
+                        <label scope="col" asp-for="Students.FirstOrDefault().Name"></label>
+                    </th>
+                    <th>
+
+                        <label scope="col" asp-for="Students.FirstOrDefault().Age"></label>
+                    </th>
+                    <th>
+
+                        <label scope="col" asp-for="Students.FirstOrDefault().Phone"></label>
+                    </th>
+                    <th>
+
+                        <label scope="col" asp-for="Students.FirstOrDefault().Address"></label>
+                    </th>
+
+                    <th>
+
+                        <label scope="col" asp-for="Students.FirstOrDefault().Gender"></label>
+                    </th>
+
+                    <th>
+
+                        <label scope="col" asp-for="Students.FirstOrDefault().StudentClass.ClassName"></label>
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Students)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.Name</td>
+                        <td>@item.Age</td>
+                        <td>@item.Phone</td>
+                        <td>@item.Address</td>
+                        <td>@item.Gender</td>
+                        <td>@item.StudentClass.ClassName</td>
+                        <td>
+                            <button asp-page-handler="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm" onclick="return confirm('您确定要删除吗？')">删除</button>
+                            <a asp-route-id="@item.Id" asp-page="Edit" class="btn btn-success btn-sm">修改</a>
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </form>
+
+
+</div>

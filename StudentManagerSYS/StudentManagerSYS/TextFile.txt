@@ -1,0 +1,44 @@
+﻿非关系型数据库：MongoDB,Redis
+关系型数据库:SQLServer/MySql/DB2
+
+关系型数据特点：数据一致性和完整性
+
+inner join 内连查询
+
+查询分类：内连查询、外连查询--左链接--右链接
+
+winfrom程序 ：重点是事件+控件
+
+SQL语句：
+		1、添加语句
+		2、查询语句 ，（查询所有，按条件 ）
+		3、更新语句
+		4、删除语句
+CRUD :C--Create,R--Retrieve,R--Update,D--Delete
+
+面向对象语言三大特性：继承、封装、多态   
+
+封装特点：封装不变（方法体）--提取变化（参数）
+
+Microsoft.ACE.OLEDB.12.0组件
+
+适合Excel2003版本
+private static string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0};Extended Properties=Excel 8.0";
+适合Excel2007以后的版本
+private static string connString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};Extended Properties=Excel 8.0";
+
+链接数据Access数据库
+string static string connString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\aaa.accdb;Persist Security Info=False;";
+
+
+这一期课程的重点：
+一、数据库访问
+		SQL语句编写
+		SqlHelper类封装
+二、摄像头的操作
+三、导入导出
+四、方法的编写（重点的是方法返回值，参数，方法的功能 ）
+
+我的一些建议，
+如果你是初学者，应该第一遍照着写，第二遍边写边参照，第三遍自己写
+

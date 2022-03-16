@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\奇艺教程\学生管理系统\StudentManagerSYS\Models\bin\Debug\Models.dll
+C:\Users\Administrator\Desktop\奇艺教程\学生管理系统\StudentManagerSYS\Models\bin\Debug\Models.pdb
+C:\Users\Administrator\Desktop\奇艺教程\学生管理系统\StudentManagerSYS\Models\obj\Debug\Models.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\奇艺教程\学生管理系统\StudentManagerSYS\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\奇艺教程\学生管理系统\StudentManagerSYS\Models\obj\Debug\Models.dll
+C:\Users\Administrator\Desktop\奇艺教程\学生管理系统\StudentManagerSYS\Models\obj\Debug\Models.pdb
+F:\学习资料\Ant分享\stu\StudentManagerSYS\Models\bin\Debug\Models.dll
+F:\学习资料\Ant分享\stu\StudentManagerSYS\Models\bin\Debug\Models.pdb
+F:\学习资料\Ant分享\stu\StudentManagerSYS\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+F:\学习资料\Ant分享\stu\StudentManagerSYS\Models\obj\Debug\Models.dll
+F:\学习资料\Ant分享\stu\StudentManagerSYS\Models\obj\Debug\Models.pdb
